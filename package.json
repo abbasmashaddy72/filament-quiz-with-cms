@@ -20,7 +20,7 @@
         "sass": "^1.70.0",
         "tailwindcss": "^3.4.1",
         "tippy.js": "^6.3.7",
-        "vite": "^5.0.0"
+        "vite": "^5.0.13"
     },
     "dependencies": {
         "@midzer/tobii": "^2.5.0",
