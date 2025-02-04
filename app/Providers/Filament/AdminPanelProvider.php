@@ -99,8 +99,7 @@ class AdminPanelProvider extends PanelProvider
             ->sidebarCollapsibleOnDesktop()
             ->plugins([
                 ResourceLockPlugin::make(),
-                RenewPasswordPlugin::make()
-                    ->timestampColumn('password_changed_at'),
+                RenewPasswordPlugin::make(),
                 QuickCreatePlugin::make()
                     ->excludes([
                         ResourceLockResource::class,

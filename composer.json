@@ -23,7 +23,6 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "alperenersoy/filament-export": "dev-fix-there",
         "amendozaaguiar/filament-route-statistics": "^2.5",
         "andreiio/blade-remix-icon": "^3.1",
         "awcodes/filament-addons": "^0.3.14",
@@ -143,12 +142,6 @@
             "php-http/discovery": true
         }
     },
-    "repositories": [
-        {
-            "type": "github",
-            "url": "https://github.com/lara-zeus/filament-export"
-        }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
