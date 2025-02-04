@@ -139,7 +139,10 @@
                 </h3>
                 @php
                     $questionId = $item->id;
-                    $selectedOptionId = $currentResultData->where('quiz_question_id', $questionId)->pluck('quiz_option_id')->first();
+                    $selectedOptionId = $currentResultData
+                        ->where('quiz_question_id', $questionId)
+                        ->pluck('quiz_option_id')
+                        ->first();
                 @endphp
 
                 @foreach ($item->quizOptions as $answer)
@@ -177,9 +180,8 @@
             <p>Thank you for registering for the Children's Exhibition. We are thrilled to have you join us!</p>
 
             <p class="italic">Your unique ID for the exhibition is:
-                <strong>{{ $quizUserUniqueId ?? 'Name' }}</strong>.</p>
-
-            <p>On the day of the exhibition, please visit the Registration Counter to collect your special gift.</p>
+                <strong>{{ $quizUserUniqueId ?? 'Name' }}</strong>.
+            </p>
 
             <p>We look forward to seeing you there!</p>
 
